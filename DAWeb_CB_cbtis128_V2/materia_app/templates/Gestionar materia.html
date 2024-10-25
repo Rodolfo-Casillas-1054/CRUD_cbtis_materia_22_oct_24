@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+
+{% block titulo %} Gestion MAterias {% endblock %}
+
+{% block Cuerpo %}
+    <h1> Gestionar Materias Rodolfo Casillas </h1>
+{% for m in Lasmaterias %}
+
+<li> {{m.codigo}},-,-,-{{m.nombre}},-,-,-{{m.creditos}}</li>
+
+{% endfor %}
+{% endblock %}
